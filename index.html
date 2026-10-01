@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+function me(){
+    // console.log(window.navigator.userAgent);
+
+   //  window.location.reload();
+
+console.log(window.document.title);    
+
+window.localStorage.setItem("username","ashar");
+console.log(window.localStorage.getItem("username"));
+
+window.sessionStorage.setItem("sessionkey","sessionvalue"); 
+console.log(window.sessionStorage.getItem("sessionkey"));
+
+console.log(window.screen.width,window.screen.height);
+
+console.log(window.innerWidth,window.innerHeight);
+
+window.history.back();
+window.history.forward(); 
+
+
+
+}
+    </script>
+</head>
+<body>
+    <button onclick="me()">click</button>
+</body>
+</html>
